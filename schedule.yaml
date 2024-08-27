@@ -1,15 +1,13 @@
-name: Minute Cleanup
+name: Minute Job
 
 on:
   schedule:
-    - cron: "* * * * *"  # Runs every minute
+    - cron: "*/1 * * * *"  # Runs every minute
 
 jobs:
-  cleanup:
+  run-every-minute:
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
 
-      - name: Run cleanup script
-        run: echo "Performing cleanup every minute!"
+    steps:
+      - name: Print Current Time
+        run: echo "The current time is $(date)"
