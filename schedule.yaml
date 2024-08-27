@@ -2,14 +2,11 @@ name: Minute Cleanup
 
 on:
   schedule:
-    - cron: "*/1 * * * *"  # Runs every minute
+    - cron: "/1 * * *" 
 
 jobs:
-  cleanup:  # Job name with a colon
-  runs-on: ubuntu-latest
-
+  cleanup:
+    runs-on: ubuntu-latest
     steps:
-
-      - name: Cleanup task
-        run: echo "Performing cleanup every minute"
-
+      - name: Run cleanup script
+        run: echo "Performing weekly cleanup!"
