@@ -2,11 +2,14 @@ name: Minute Cleanup
 
 on:
   schedule:
-    - cron: "/1 * * *" 
+    - cron: "* * * * *"  # Runs every minute
 
 jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
       - name: Run cleanup script
-        run: echo "Performing weekly cleanup!"
+        run: echo "Performing cleanup every minute!"
