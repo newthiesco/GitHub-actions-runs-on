@@ -1,0 +1,12 @@
+name: Weekly Cleanup
+
+on:
+  schedule:
+    - cron: "* * * * *" # Runs at 2 AM every Sunday
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run cleanup script
+        run: echo "Performing weekly cleanup!"
