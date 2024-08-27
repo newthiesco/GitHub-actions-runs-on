@@ -6,7 +6,7 @@ on:
 
 jobs:
   cleanup:  # Job name with a colon
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
     steps:
 
