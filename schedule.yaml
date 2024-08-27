@@ -7,7 +7,7 @@ jobs:
   Cleanup:
     runs-on: ubuntu-latest
     steps:
-      -  name: checkout
-         uses:  actions/checkout@v4
-      -  name: cleanup task
-         run:  echo "performing cleanup every minute"
+      - name: Checkout
+        uses:  actions/checkout@v4
+      - name: cleanup task
+        run:  echo "performing cleanup every minute"
