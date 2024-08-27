@@ -2,7 +2,7 @@ name: Weekly Cleanup
 
 on:
   schedule:
-    - cron: "*/1 * * * *" # Runs at 2 AM every Sunday
+    - cron: "*/1 * * * *" 
 
 jobs:
   cleanup:
