@@ -2,7 +2,7 @@ name: Minute Job
 
 on:
   schedule:
-    - cron: '* * * * *'  # Runs every minute
+    - cron: '*/2 * * * *'  # Runs every minute
 
 jobs:
   run-every-minute:
